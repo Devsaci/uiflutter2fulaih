@@ -28,7 +28,6 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-
   //98. TextSpan & Toast
   Widget myWidget() {
     return myWidget();
@@ -41,7 +40,10 @@ class _MyHomePageState extends State<MyHomePage> {
         title: const Text("UI Flutter Demo HomePage"),
       ),
       body: const Center(
-        child: Text("Pink/Amber",style: TextStyle(fontWeight: FontWeight.bold),),
+        child: Text(
+          "Pink/Amber",
+          style: TextStyle(fontWeight: FontWeight.bold, fontSize: 35),
+        ),
       ),
     );
   }
