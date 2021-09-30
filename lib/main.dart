@@ -2,7 +2,7 @@ import 'dart:ui';
 
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:toast/toast.dart' show Toast;
+import 'package:fluttertoast/fluttertoast.dart' show Fluttertoast, Toast;
 
 void main() {
   runApp(const MyApp());
@@ -45,7 +45,7 @@ class _MyHomePageState extends State<MyHomePage> {
       body: Center(
           child: FlatButton(
         onPressed: (){
-          Toast.show("Pink/AmberMessage",  context);
+          Fluttertoast.showToast(msg: "msg");
         },
         child: RichText(
           text: const TextSpan(children: [
