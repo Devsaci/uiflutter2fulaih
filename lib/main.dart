@@ -45,7 +45,7 @@ class _MyHomePageState extends State<MyHomePage> {
       body: Center(
           child: FlatButton(
         onPressed: (){
-          Toast.show();
+          Toast.show("Pink/AmberMessage",  context);
         },
         child: RichText(
           text: const TextSpan(children: [
