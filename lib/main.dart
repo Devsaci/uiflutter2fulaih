@@ -37,9 +37,11 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text("Flutter Demo HomePage"),
+        title: const Text("UI Flutter Demo HomePage"),
       ),
-      body: null,
+      body: const Center(
+        child: Text("Pink/Amber"),
+      ),
     );
   }
 }
