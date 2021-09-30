@@ -1,3 +1,5 @@
+import 'dart:ui';
+
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
@@ -39,13 +41,22 @@ class _MyHomePageState extends State<MyHomePage> {
       appBar: AppBar(
         title: const Text("UI Flutter Demo HomePage"),
       ),
-      body:  Center(
+      body: Center(
         child: RichText(
-            text: TextSpan(
-              children: [
-
-              ]
-            ),
+          text: const TextSpan(children: [
+            TextSpan(
+                text: 'Pink',
+                style: TextStyle(
+                    color: Colors.pink,
+                    fontSize: 35,
+                    fontWeight: FontWeight.bold)),
+            TextSpan(
+                text: '/Amber',
+                style: TextStyle(
+                    color: Colors.amber,
+                    fontSize: 35,
+                    fontWeight: FontWeight.bold)),
+          ]),
         ),
       ),
     );
