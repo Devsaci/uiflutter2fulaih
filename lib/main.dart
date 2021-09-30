@@ -42,6 +42,8 @@ class _MyHomePageState extends State<MyHomePage> {
         title: const Text("UI Flutter Demo HomePage"),
       ),
       body: Center(
+          child: FlatButton(
+        onPressed: (){},
         child: RichText(
           text: const TextSpan(children: [
             TextSpan(
@@ -49,25 +51,22 @@ class _MyHomePageState extends State<MyHomePage> {
                 style: TextStyle(
                     color: Colors.pink,
                     fontSize: 35,
-                    fontWeight: FontWeight.bold)
-            ),
+                    fontWeight: FontWeight.bold)),
             TextSpan(
                 text: '/',
                 style: TextStyle(
                     color: Colors.black,
                     fontSize: 50,
-                    fontWeight: FontWeight.bold)
-            ),
+                    fontWeight: FontWeight.bold)),
             TextSpan(
                 text: 'Amber',
                 style: TextStyle(
                     color: Colors.amber,
                     fontSize: 35,
                     fontWeight: FontWeight.bold)),
-          ]
-          ),
+          ]),
         ),
-      ),
+      )),
     );
   }
 }
