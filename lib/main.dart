@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -40,7 +41,7 @@ class _MyHomePageState extends State<MyHomePage> {
         title: const Text("UI Flutter Demo HomePage"),
       ),
       body: const Center(
-        child: Text("Pink/Amber"),
+        child: Text("Pink/Amber",style: TextStyle(fontWeight: FontWeight.bold),),
       ),
     );
   }
