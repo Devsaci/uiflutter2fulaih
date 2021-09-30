@@ -39,10 +39,13 @@ class _MyHomePageState extends State<MyHomePage> {
       appBar: AppBar(
         title: const Text("UI Flutter Demo HomePage"),
       ),
-      body: const Center(
-        child: Text(
-          "Pink/Amber",
-          style: TextStyle(fontWeight: FontWeight.bold, fontSize: 35),
+      body:  Center(
+        child: RichText(
+            text: TextSpan(
+              children: [
+
+              ]
+            ),
         ),
       ),
     );
