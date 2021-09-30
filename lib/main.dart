@@ -43,7 +43,9 @@ class _MyHomePageState extends State<MyHomePage> {
       ),
       body: Center(
           child: FlatButton(
-        onPressed: (){},
+        onPressed: (){
+          Toast.show();
+        },
         child: RichText(
           text: const TextSpan(children: [
             TextSpan(
