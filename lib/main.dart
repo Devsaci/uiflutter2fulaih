@@ -2,8 +2,8 @@ import 'dart:ui';
 
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:fluttertoast/fluttertoast.dart' show Fluttertoast, Toast;
-
+import 'package:fluttertoast/fluttertoast.dart' ;
+// import 'package:toast/toast.dart' show Toast;
 void main() {
   runApp(const MyApp());
 }
@@ -45,7 +45,16 @@ class _MyHomePageState extends State<MyHomePage> {
       body: Center(
           child: FlatButton(
         onPressed: (){
-          Fluttertoast.showToast(msg: "msg");
+          Fluttertoast.showToast(
+              msg: "This is Center Short Toast",
+              toastLength: Toast.LENGTH_LONG,
+              gravity: ToastGravity.CENTER,
+              timeInSecForIosWeb: 1,
+              backgroundColor: Colors.red,
+              textColor: Colors.white,
+              fontSize: 20.0
+          );
+
         },
         child: RichText(
           text: const TextSpan(children: [
